@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-03-10T06:52:25-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/coders-dream-in-dataflow-too/</loc>
+    <lastmod>2026-03-10T06:52:25-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-10T06:52:25-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-03-07T12:35:51-04:00</lastmod>
   </url><url>
@@ -29,9 +38,6 @@
     <loc>http://localhost:1313/tags/llm/</loc>
     <lastmod>2026-03-07T12:35:51-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-07T12:35:51-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/manifesto/</loc>
     <lastmod>2026-03-07T12:35:51-04:00</lastmod>
   </url><url>
@@ -52,9 +58,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/visual-programming/</loc>
     <lastmod>2026-03-07T12:35:51-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-03-07T05:31:11-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/robots-dream-in-dataflow/</loc>
     <lastmod>2026-03-07T05:31:11-04:00</lastmod>

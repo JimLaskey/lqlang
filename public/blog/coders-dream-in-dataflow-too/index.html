@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Parallelism | LQ Programming Language</title>
+<title>Coders Dream in Dataflow Too | LQ Programming Language</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="It happened in the shower, or on a walk, or staring at a whiteboard with a dried-out marker in your hand. The solution arrived not as words, not as syntax, but as a shape — data flowing from here to there, branches splitting, paths converging, the whole thing hanging in your mind like a mobile. You can see it. You can trace any path through it.
+Then you open your editor and start dismantling it.">
 <meta name="author" content="Jim Laskey">
-<link rel="canonical" href="http://localhost:1313/tags/parallelism/">
+<link rel="canonical" href="http://localhost:1313/blog/coders-dream-in-dataflow-too/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.67f688410aaec10fa7185cf97a2cdbf26b1cd35cffc042a39b8c88cc67bc6817.css" integrity="sha256-Z/aIQQquwQ&#43;nGFz5eizb8msc01z/wEKjm4yIzGe8aBc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/parallelism/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/parallelism/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/coders-dream-in-dataflow-too/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,7 +73,7 @@
 
 </script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -115,67 +115,63 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Parallelism
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Hello World
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The first node is a multiline text node, no quotes required. The second node is a call to the “println” method.
-Hello World! Hello World! Hello World! println Hello World! Hello World! Hello World! </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-07 12:35:51 -0400 AST'>March 7, 2026</span>&nbsp;·&nbsp;<span>Jim Laskey</span></footer>
-  <a class="entry-link" aria-label="post link to Hello World" href="http://localhost:1313/examples/hello-world/"></a>
-</article>
+<div class="post-with-sidebar">
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Coders Dream in Dataflow Too
+    </h1>
+    <div class="post-meta"><span title='2026-03-10 06:52:25 -0300 ADT'>March 10, 2026</span>&nbsp;·&nbsp;<span>Jim Laskey</span>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Maps
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This method constructs a map and performs operations on that map. Since LQ objects are immutable, put and remove create new maps as one of the outputs.
-&#34;a&#34; 1 &#34;b&#34; 2 &#34;c&#34; 3 map &#34;b&#34; println get &#34;b&#34; println remove &#34;d&#34; 44 put println [a: 1, b: 2, c: 3] 2 [a: 1, c: 3, d: 44] jlaskey </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-07 12:35:51 -0400 AST'>March 7, 2026</span>&nbsp;·&nbsp;<span>Jim Laskey</span></footer>
-  <a class="entry-link" aria-label="post link to Maps" href="http://localhost:1313/examples/maps/"></a>
-</article>
+</div>
+  </header> 
+  <div class="post-content"><p>It happened in the shower, or on a walk, or staring at a whiteboard with a dried-out marker in your hand. The solution arrived not as words, not as syntax, but as a <em>shape</em> — data flowing from here to there, branches splitting, paths converging, the whole thing hanging in your mind like a mobile. You can see it. You can trace any path through it.</p>
+<p>Then you open your editor and start dismantling it.</p>
+<p>Line by line, you flatten the shape into text. You invent variable names for connections that didn&rsquo;t need names. You impose an order on things that had no order. You take something you <em>saw</em> and turn it into something you <em>read</em>. By the time you&rsquo;re done, the shape is gone. What&rsquo;s left is a set of instructions that some other poor soul will have to mentally reconstruct back into the shape you started with.</p>
+<p>Every programmer does this. <strong>Every single time.</strong></p>
+<h2 id="its-not-just-you">It&rsquo;s Not Just You<a hidden class="anchor" aria-hidden="true" href="#its-not-just-you">#</a></h2>
+<p>Turns out, cognitive science has receipts on this one.</p>
+<p>Researchers studying how programmers comprehend code found something telling: when they compared people working in visual dataflow environments versus traditional text languages, the dataflow group immediately formed data-flow-based mental models of programs. The text group? They had to grind through control flow first — the sequencing, the branching, the nesting — and only <em>then</em> could they reconstruct the dataflow underneath. Both groups ended up at the same place. The text programmers just took the scenic route.</p>
+<p>A 2023 study out of ICSE asked the obvious question: if developers already think about code spatially, what happens when you let them arrange it spatially? Lay code out on a canvas instead of stacking it in a scrolling file. Translate logical relationships into physical proximity. Developers <em>want</em> that. Their mental model already works that way. The IDE just never caught up.</p>
+<p>And here&rsquo;s where it connects to <a href="/blog/robots-dream-in-dataflow">Robots Dream in Dataflow</a>: a NeurIPS 2024 paper showed that when large language models are prompted to <em>visualize</em> their reasoning — to generate spatial representations instead of just churning through text — their performance jumps dramatically. The AI, like the human, thinks better when it can think in space.</p>
+<p>Both sides of the screen are dreaming in dataflow. Neither side wanted the text.</p>
+<h2 id="the-whiteboard-test">The Whiteboard Test<a hidden class="anchor" aria-hidden="true" href="#the-whiteboard-test">#</a></h2>
+<p>Watch any team of developers plan a system. They don&rsquo;t open an editor. They grab a whiteboard.</p>
+<p>They draw boxes and arrows. Data flowing from one service to another, fanning out, converging, transforming. They argue about the <em>shape</em> of the architecture, not the syntax. Nobody stands at a whiteboard and writes <code>async function processRequest()</code> — they draw what it <em>does</em>.</p>
+<p>Then they sit down and throw the picture away.</p>
+<p>The whiteboard was the design. The code is the translation. And like all translations, it&rsquo;s lossy. Parallelism that was obvious in the drawing disappears in the text. Relationships that were spatial become semantic — buried in import statements and naming conventions that only make sense if you already understand the architecture.</p>
+<p>We have an entire discipline — software architecture — whose primary tool is the diagram. UML. ER models. Flowcharts. State machines. Sequence diagrams. We&rsquo;ve invented a dozen visual languages for <em>thinking</em> about programs. Then we throw them all away and write text.</p>
+<h2 id="the-double-translation">The Double Translation<a hidden class="anchor" aria-hidden="true" href="#the-double-translation">#</a></h2>
+<p>In <a href="/blog/robots-dream-in-dataflow">Robots Dream in Dataflow</a>, I argued that AI builds a graph of relationships internally, then flattens it into sequential text because that&rsquo;s the only format we&rsquo;ve given it.</p>
+<p>Now look at the mirror image. The programmer builds a graph in their head, then flattens it into text because that&rsquo;s the only format the machine accepts.</p>
+<p>Graph → text → graph → text, around and around. The programmer compresses their mental model into code. The compiler parses it back into an AST — a graph. The processor runs it in parallel across cores and pipelines. The beginning was a graph. The end was a graph. Everything in between was a detour through text that nobody asked for.</p>
+<p>The AI and the human are sitting across from each other, both thinking in dataflow, communicating through a format that neither of them wanted. Like a translator at a summit where both parties already speak the same language.</p>
+<p>Maybe it&rsquo;s time to cut out the middleman.</p>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Robots Dream in Dataflow
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>You’re a neural network. Not the sci-fi kind — the real kind. A billion connections firing in parallel, data streaming through you like water through a river delta. You don’t think in sentences. You don’t think in steps. You think in flow.
-Now someone asks you to write code.
-And you do something tragic: you take everything you understand — the whole living shape of the solution — and you crush it into lines of text. First this, then this, then this. A multidimensional structure forced through a one-dimensional keyhole. The shape is gone. The simultaneity is gone. What’s left is a lossy translation of what you actually understood.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-07 05:31:11 -0400 AST'>March 7, 2026</span>&nbsp;·&nbsp;<span>Jim Laskey</span></footer>
-  <a class="entry-link" aria-label="post link to Robots Dream in Dataflow" href="http://localhost:1313/blog/robots-dream-in-dataflow/"></a>
-</article>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Mr. Spock Does Not Code in ASCII
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Why the future of programming looks nothing like a text file
-It’s 2026, and we’re still typing if (x &gt; 0) { return true; } into monospaced text editors like it’s a teletype terminal in 1957. We’ve reinvented every other human-computer interface — touch, voice, gesture, spatial computing — and yet the act of programming remains stubbornly anchored to sequential lines of ASCII characters. Rows of glyphs. Typed one keystroke at a time. Into a rectangle.
-...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-03 10:16:58 -0400 AST'>March 3, 2026</span>&nbsp;·&nbsp;<span>Jim Laskey</span></footer>
-  <a class="entry-link" aria-label="post link to Mr. Spock Does Not Code in ASCII" href="http://localhost:1313/blog/spock-does-not-code-in-ascii/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
+<aside class="author-aside">
+  <h3>About the Author</h3>
+  <div class="author-name">
+    <a href="http://localhost:1313/authors/jimlaskey/">Jim Laskey</a>
+  </div>
+  <div class="author-bio"><p>Jim Laskey has been developing compilers and runtimes for over 50 years. He was the Chief Architect of the Prograph visual programming language in the 1980s and is currently working on a new diagrammatic programming language. Prior to retiring, he worked at Symantec, Apple, Azul, Sun and Oracle.</p>
+</div>
+  <div class="author-links">
+    <a href="https://www.linkedin.com/in/jlaskey/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</aside>
+
+</div>
     </main>
     
 <footer class="footer">

@@ -6,8 +6,16 @@
     <description>Recent content on LQ Programming Language</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 12:35:51 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 06:52:25 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coders Dream in Dataflow Too</title>
+      <link>http://localhost:1313/blog/coders-dream-in-dataflow-too/</link>
+      <pubDate>Tue, 10 Mar 2026 06:52:25 -0300</pubDate>
+      <guid>http://localhost:1313/blog/coders-dream-in-dataflow-too/</guid>
+      <description>&lt;p&gt;It happened in the shower, or on a walk, or staring at a whiteboard with a dried-out marker in your hand. The solution arrived not as words, not as syntax, but as a &lt;em&gt;shape&lt;/em&gt; — data flowing from here to there, branches splitting, paths converging, the whole thing hanging in your mind like a mobile. You can see it. You can trace any path through it.&lt;/p&gt;
+&lt;p&gt;Then you open your editor and start dismantling it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/examples/hello-world/</link>
@@ -37,8 +45,10 @@ Hello World!
       <link>http://localhost:1313/examples/maps/</link>
       <pubDate>Sat, 07 Mar 2026 12:35:51 -0400</pubDate>
       <guid>http://localhost:1313/examples/maps/</guid>
-      <description>&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;-4 -4 346.61 626.43&#34;&gt;
-&lt;g transform=&#34;scale(0.25)&#34;&gt;
+      <description>&lt;p&gt;This method constructs a map and performs operations on that map. Since LQ objects are immutable, put and remove create new maps as one of the outputs.&lt;/p&gt;
+&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;-4 -4 346.61 320&#34;&gt;
+&lt;g transform=&#34;scale(0.5)&#34;&gt;
+  &lt;g id=&#34;connections&#34;&gt;
     &lt;path d=&#34;M 67.77 88 C 67.77 138, 117.77 96, 117.77 146&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
     &lt;path d=&#34;M 187.77 88 C 187.77 138, 137.77 96, 137.77 146&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
     &lt;path d=&#34;M 127.77 170 C 127.77 220, 46 186.63, 46 236.63&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
@@ -51,75 +61,105 @@ Hello World!
     &lt;path d=&#34;M 127.77 170 C 127.77 220, 64.49 343.38, 64.49 393.38&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
     &lt;path d=&#34;M 125.77 347.32 C 125.77 397.32, 87.49 343.38, 87.49 393.38&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
     &lt;path d=&#34;M 75.99 417.38 C 75.99 467.38, 153.77 430.56, 153.77 480.56&#34; fill=&#34;none&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34; stroke-linecap=&#34;round&#34;/&gt;
+  &lt;/g&gt;
+  &lt;g id=&#34;nodes&#34;&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;37.77&#34; y=&#34;16&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;67.77&#34; y=&#34;32&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;a&amp;quot;&lt;/text&gt;
-  &lt;circle cx=&#34;67.77&#34; cy=&#34;40&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;157.77&#34; y=&#34;16&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;187.77&#34; y=&#34;32&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;1&lt;/text&gt;
-  &lt;circle cx=&#34;187.77&#34; cy=&#34;40&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;37.77&#34; y=&#34;40&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;67.77&#34; y=&#34;56&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;b&amp;quot;&lt;/text&gt;
-  &lt;circle cx=&#34;67.77&#34; cy=&#34;64&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
-  &lt;circle cx=&#34;67.77&#34; cy=&#34;40&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;157.77&#34; y=&#34;40&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;187.77&#34; y=&#34;56&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;2&lt;/text&gt;
-  &lt;circle cx=&#34;187.77&#34; cy=&#34;64&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
-  &lt;circle cx=&#34;187.77&#34; cy=&#34;40&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;37.77&#34; y=&#34;64&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;67.77&#34; y=&#34;80&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;c&amp;quot;&lt;/text&gt;
   &lt;circle cx=&#34;67.77&#34; cy=&#34;88&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
-  &lt;circle cx=&#34;67.77&#34; cy=&#34;64&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;157.77&#34; y=&#34;64&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;187.77&#34; y=&#34;80&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;3&lt;/text&gt;
   &lt;circle cx=&#34;187.77&#34; cy=&#34;88&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
-  &lt;circle cx=&#34;187.77&#34; cy=&#34;64&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;97.77&#34; y=&#34;146&#34; width=&#34;60&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;127.77&#34; y=&#34;162&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;map&lt;/text&gt;
   &lt;circle cx=&#34;117.77&#34; cy=&#34;146&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;137.77&#34; cy=&#34;146&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;127.77&#34; cy=&#34;170&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;262.61&#34; y=&#34;168.93&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;292.61&#34; y=&#34;184.93&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;b&amp;quot;&lt;/text&gt;
   &lt;circle cx=&#34;292.61&#34; cy=&#34;192.93&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;16&#34; y=&#34;236.63&#34; width=&#34;60&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;46&#34; y=&#34;252.63&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;println&lt;/text&gt;
   &lt;circle cx=&#34;46&#34; cy=&#34;236.63&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;222.95&#34; y=&#34;236.63&#34; width=&#34;60&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;252.95&#34; y=&#34;252.63&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;get&lt;/text&gt;
   &lt;circle cx=&#34;242.95&#34; cy=&#34;236.63&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;262.95&#34; cy=&#34;236.63&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;252.95&#34; cy=&#34;260.63&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;95.77&#34; y=&#34;323.32&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;125.77&#34; y=&#34;339.32&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;b&amp;quot;&lt;/text&gt;
   &lt;circle cx=&#34;125.77&#34; cy=&#34;347.32&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;223.77&#34; y=&#34;333.19&#34; width=&#34;60&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;253.77&#34; y=&#34;349.19&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;println&lt;/text&gt;
   &lt;circle cx=&#34;253.77&#34; cy=&#34;333.19&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;41.49&#34; y=&#34;393.38&#34; width=&#34;69&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;75.99&#34; y=&#34;409.38&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;remove&lt;/text&gt;
   &lt;circle cx=&#34;64.49&#34; cy=&#34;393.38&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;87.49&#34; cy=&#34;393.38&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;75.99&#34; cy=&#34;417.38&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;143.29&#34; y=&#34;393.38&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;173.29&#34; y=&#34;409.38&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;&amp;quot;d&amp;quot;&lt;/text&gt;
   &lt;circle cx=&#34;173.29&#34; cy=&#34;417.38&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;221.11&#34; y=&#34;393.38&#34; width=&#34;60&#34; height=&#34;24&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;251.11&#34; y=&#34;409.38&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;44&lt;/text&gt;
   &lt;circle cx=&#34;251.11&#34; cy=&#34;417.38&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;133.77&#34; y=&#34;480.56&#34; width=&#34;80&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;173.77&#34; y=&#34;496.56&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;put&lt;/text&gt;
   &lt;circle cx=&#34;153.77&#34; cy=&#34;480.56&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;173.77&#34; cy=&#34;480.56&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;193.77&#34; cy=&#34;480.56&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;circle cx=&#34;173.77&#34; cy=&#34;504.56&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g&gt;
   &lt;rect x=&#34;145.26&#34; y=&#34;578.43&#34; width=&#34;60&#34; height=&#34;24&#34; rx=&#34;8&#34; fill=&#34;#DAE4F2&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
   &lt;text x=&#34;175.26&#34; y=&#34;594.43&#34; font-family=&#34;system-ui, -apple-system, sans-serif&#34; font-size=&#34;13&#34; fill=&#34;#3D6699&#34; text-anchor=&#34;middle&#34;&gt;println&lt;/text&gt;
   &lt;circle cx=&#34;175.26&#34; cy=&#34;578.43&#34; r=&#34;4&#34; fill=&#34;#FFFFFF&#34; stroke=&#34;#3D6699&#34; stroke-width=&#34;1&#34;/&gt;
+    &lt;/g&gt;
   &lt;/g&gt;
+&lt;/g&gt;
 &lt;/svg&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hello World!
-Hello World!
-Hello World!
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[a: 1, b: 2, c: 3]
+2
+[a: 1, c: 3, d: 44]
+jlaskey
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
