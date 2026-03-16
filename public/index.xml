@@ -6,8 +6,72 @@
     <description>Recent content on LQ Programming Language</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 14:20:54 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 10:03:50 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The LQ Tool Chain</title>
+      <link>http://localhost:1313/blog/the-lq-tool-chain/</link>
+      <pubDate>Mon, 16 Mar 2026 10:03:50 -0300</pubDate>
+      <guid>http://localhost:1313/blog/the-lq-tool-chain/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/blog/let-the-robots-speak&#34;&gt;Let the Robots Speak&lt;/a&gt; introduced LQ — a visual dataflow language designed for AI agents. This post looks under the hood at how LQ programs go from graph to running code.&lt;/p&gt;
+&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;The LQ toolchain is built around a single persistent process: the &lt;strong&gt;lqc server&lt;/strong&gt;. Both the native macOS IDE and (eventually) a browser-based client communicate with lqc through a message-based protocol. One server, multiple clients, same capabilities.&lt;/p&gt;
+&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 200 100&#34;&gt;
+  &lt;style&gt;
+    .wire { fill: none; stroke: #73726c; stroke-width: 0.5; }
+    .client { fill: #e8f2fc; stroke: #1466b8; stroke-width: 0.5; }
+    .server { fill: #f6fafe; stroke: #1466b8; stroke-width: 0.5; }
+    .service { fill: #e8f2fc; stroke: #1466b8; stroke-width: 0.5; }
+    .ext { fill: #e8f2fc; stroke: #1466b8; stroke-width: 0.5; }
+    .title { font-family: Helvetica, Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }
+    .sub { font-family: Helvetica, Arial, sans-serif; font-size: 12px; fill: black; text-anchor: middle; }
+    .label { font-family: Helvetica, Arial, sans-serif; font-size: 12px; fill: #5f5e5a; text-anchor: middle; }
+  &lt;/style&gt;
+ &lt;g transform=&#34;scale(0.20)&#34;&gt;
+ &lt;!-- Clients --&gt;
+  &lt;rect class=&#34;client&#34; x=&#34;100&#34; y=&#34;30&#34; width=&#34;180&#34; height=&#34;56&#34; rx=&#34;8&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;190&#34; y=&#34;50&#34;&gt;IDE&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;190&#34; y=&#34;70&#34;&gt;Native macOS&lt;/text&gt;
+  &lt;rect class=&#34;client&#34; x=&#34;400&#34; y=&#34;30&#34; width=&#34;180&#34; height=&#34;56&#34; rx=&#34;8&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;490&#34; y=&#34;50&#34;&gt;Browser&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;490&#34; y=&#34;70&#34;&gt;Pending&lt;/text&gt;
+  &lt;!-- Client arrows --&gt;
+  &lt;line class=&#34;wire&#34; x1=&#34;190&#34; y1=&#34;86&#34; x2=&#34;190&#34; y2=&#34;148&#34;/&gt;
+  &lt;line class=&#34;wire&#34; x1=&#34;490&#34; y1=&#34;86&#34; x2=&#34;490&#34; y2=&#34;148&#34;/&gt;
+  &lt;text class=&#34;label&#34; x=&#34;340&#34; y=&#34;128&#34;&gt;Messages&lt;/text&gt;
+  &lt;!-- lqc server container --&gt;
+  &lt;rect class=&#34;server&#34; x=&#34;60&#34; y=&#34;150&#34; width=&#34;560&#34; height=&#34;182.5&#34; rx=&#34;20&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;340&#34; y=&#34;178&#34;&gt;lqc server&lt;/text&gt;
+  &lt;!-- Language service --&gt;
+  &lt;rect class=&#34;service&#34; x=&#34;80&#34; y=&#34;200&#34; width=&#34;150&#34; height=&#34;80&#34; rx=&#34;12&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;155&#34; y=&#34;224&#34;&gt;Language service&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;155&#34; y=&#34;246&#34;&gt;Autocomplete&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;155&#34; y=&#34;264&#34;&gt;Verify&lt;/text&gt;
+  &lt;!-- Compiler --&gt;
+  &lt;rect class=&#34;service&#34; x=&#34;260&#34; y=&#34;200&#34; width=&#34;160&#34; height=&#34;80&#34; rx=&#34;12&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;340&#34; y=&#34;224&#34;&gt;Compiler&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;340&#34; y=&#34;246&#34;&gt;Compile, build&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;340&#34; y=&#34;264&#34;&gt;Bundle&lt;/text&gt;
+  &lt;!-- Runtime --&gt;
+  &lt;rect class=&#34;service&#34; x=&#34;450&#34; y=&#34;200&#34; width=&#34;150&#34; height=&#34;80&#34; rx=&#34;12&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;525&#34; y=&#34;224&#34;&gt;Runtime&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;525&#34; y=&#34;246&#34;&gt;Run&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;525&#34; y=&#34;264&#34;&gt;Debug&lt;/text&gt;
+  &lt;!-- Arrows to external tools --&gt;
+  &lt;line class=&#34;wire&#34; x1=&#34;288.91&#34; y1=&#34;332.5&#34; x2=&#34;245.67&#34; y2=&#34;409.74&#34;/&gt;
+  &lt;line class=&#34;wire&#34; x1=&#34;391.08&#34; y1=&#34;332.5&#34; x2=&#34;434.32&#34; y2=&#34;409.74&#34;/&gt;
+  &lt;!-- LLVM --&gt;
+  &lt;rect class=&#34;ext&#34; x=&#34;140&#34; y=&#34;409.74&#34; width=&#34;180&#34; height=&#34;56&#34; rx=&#34;8&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;230&#34; y=&#34;430&#34;&gt;LLVM&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;230&#34; y=&#34;450&#34;&gt;Native code generation&lt;/text&gt;
+  &lt;!-- LLDB --&gt;
+  &lt;rect class=&#34;ext&#34; x=&#34;360&#34; y=&#34;409.74&#34; width=&#34;180&#34; height=&#34;56&#34; rx=&#34;8&#34;/&gt;
+  &lt;text class=&#34;title&#34; x=&#34;450&#34; y=&#34;430&#34;&gt;LLDB&lt;/text&gt;
+  &lt;text class=&#34;sub&#34; x=&#34;450&#34; y=&#34;450&#34;&gt;Debug engine&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+&lt;p&gt;The lqc server handles three categories of work: language services, compilation, and runtime.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Let the Robots Speak</title>
       <link>http://localhost:1313/blog/let-the-robots-speak/</link>
